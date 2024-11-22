@@ -5,8 +5,13 @@ const port = 3000;
 
 app.get('/', (req, res) => {
     res.send('Hello from docker!')
-  })
+  });
   
-  app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+
+app.get('/testruta', (req, res) => {
+  res.send('how does this get to Docker?!')
+  });
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
   })

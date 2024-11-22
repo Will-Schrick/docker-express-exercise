@@ -4,7 +4,7 @@
 FROM node:22.11.0
 
 # Establecer el directorio de trabajo dentro del contenedor
-WORKDIR '/All Documents\FSBootcamp\Git\docker-express-exercise'
+WORKDIR /usr/src/app
 
 # Copiar 'package.json' y 'package-lock.json' (si está disponible)
 COPY package*.json ./
